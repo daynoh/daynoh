@@ -20,13 +20,13 @@
 <!--h2 without bottom border-->
 <div id="user-content-toc">
   <ul align="center">
-    <summary><h2 style="display: inline-block">Confusion is part of Programming</h2></summary>
+    <summary><h2 style="display: inline-block">"In search of log(n), I wandered through the wilderness of O(n^2)."</h2></summary>
   </ul>
 </div>
 
 
 <!--Intro start-->
-- 🔭 I’m currently comfortable with **Python, React, Nextjs, Nodejs, MongoDB, Postgresql, Mysql, Machine Learning, Reinforcement Learning, Deep Learning**
+- 🔭 I’m currently comfortable with **Python,TypeScript, React, Nextjs, Nodejs, MongoDB, Postgresql, Mysql, Machine Learning, Reinforcement Learning, Deep Learning**
 
 - 🌱 I’m currently working on **Creating the first fully autonomous somewhat profitable trading Agent using the state of the art in Language Processing, Reinforcement Learning and feature engineering techniques**
 
@@ -86,7 +86,7 @@
 <!--tech stack icons-->
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,aws,css,tensorflow,pytorch,numpy,pandas,postgres,prisma,express,figma,firebase,github,html,js,linux,md,materialui,mongodb,mysql,nextjs,nodejs,postman,py,react,redux,tailwind,vscode,&perline=14" />
+    <img src="https://skillicons.dev/icons?i=git,aws,css,tensorflow,pytorch,npm,r ,sklearn,ts,postgres,prisma,express,figma,firebase,github,html,js,linux,md,materialui,mongodb,mysql,nextjs,nodejs,postman,py,react,redux,tailwind,vscode,&perline=14" />
   </a>
 </p>
 
