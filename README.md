@@ -80,13 +80,13 @@
 <!--h1 without bottom border-->
 <div id="user-content-toc">
   <ul align="center">
-    <summary><h2 style="display: inline-block">Technologies That I Know👨🏻‍💻</h2></summary>
+    <summary><h2 style="display: inline-block">Allow me to regale you with the realms I've mastered, for my path has been one of conquest and enlightenment:</h2></summary>
   </ul>
 </div>
 <!--tech stack icons-->
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,aws,css,tensorflow,pytorch,npm,r ,sklearn,ts,postgres,prisma,express,figma,firebase,github,html,js,linux,md,materialui,mongodb,mysql,nextjs,nodejs,postman,py,react,redux,tailwind,vscode,&perline=14" />
+    <img src="https://skillicons.dev/icons?i=git,aws,css,tensorflow,pytorch,npm,r,sklearn,ts,postgres,prisma,express,figma,firebase,github,html,js,linux,md,materialui,mongodb,mysql,nextjs,nodejs,postman,py,react,redux,tailwind,vscode,&perline=14" />
   </a>
 </p>
 
