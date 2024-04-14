@@ -42,28 +42,6 @@
 <!--Intro end-->
 
 
-
-<!--- stats & Trophy (start) -->
-<p align="center">
-  <!--- stats (start) -->
-<table align="center">
-<tr border="none">
-<td width="50%" align="center">
-  
-  <img  align="center"  src="https://github-readme-stats.vercel.app/api?username=daynoh&theme=dark&show_icons=true&count_private=true" />
-  <br></br>
-  <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=daynoh&theme=dark&hide_border=false" /> 
-</td>
-
-<td width="50%" align="center">
-
-  <img  align="center"  src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=daynoh&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10"/>
-  
-  </td>
-</tr>
-</table>
-<!--- stats (end) -->
-
 <!--- trophy (start) -->
 <div align=center>
   <a href="https://github.com/ryo-ma/github-profile-trophy" title="Go to Source">
@@ -80,15 +58,7 @@
 <!--h1 without bottom border-->
 <div id="user-content-toc">
   <ul align="center">
-    <summary><h2 style="display: inline-block">Allow me to regale you with the realms I've mastered, for my path has been one of conquest and enlightenment:</h2></summary>
-  </ul>
-</div>
-<!--tech stack icons-->
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,aws,css,tensorflow,pytorch,npm,r,sklearn,ts,postgres,prisma,express,figma,firebase,github,html,js,linux,md,materialui,mongodb,mysql,nextjs,nodejs,postman,py,react,redux,tailwind,vscode,&perline=14" />
-  </a>
-</p>
+<details> <summary><h2 style="display: inline-block">Allow me to regale you with the realms I've mastered, for my path has been one of conquest and enlightenment:</h2></summary> <div> <ul> <li><h3>Frontend Sorcery</h3> <p>I have tamed the beasts of <code>JavaScript</code>, <code>TypeScript</code>, <code>React</code>, <code>Next.js</code>, and <code>Redux</code>, bending their arcane powers to my will. User interfaces bow before my might.</p> </li> <li><h3>Backend Wizardry</h3> <p>The mysteries of <code>Node.js</code>, <code>Express</code>, <code>Python</code>, and <code>Flask</code> hold no secrets from me. I am a master of server-side alchemy, crafting APIs that bend reality itself.</p> </li> <li><h3>Database Dominion</h3> <p>I have forged an unbreakable bond with the guardians of data – <code>MongoDB</code>, <code>PostgreSQL</code>, and <code>MySQL</code>. Their vast troves of knowledge are mine to command.</p> </li> <li><h3>Cloud Ascension</h3> <p>I have ascended to the ethereal realms of <code>AWS</code> and <code>Google Cloud</code>, harnessing the power of virtualized landscapes and unleashing deployments that defy mortal comprehension.</p> </li> <li><h3>Machine Learning Enlightenment</h3> <p>Through the teachings of <code>Scikit-Learn</code>, <code>TensorFlow</code>, and <code>PyTorch</code>, I have achieved a higher state of consciousness, unlocking the secrets of data patterns and predictive sorcery.</p> </li> <li><h3>Fullstack Sovereignty</h3> <p>With the might of <code>React</code>, <code>Node.js</code>, and their kin at my beck and call, I reign supreme over the fullstack domain, weaving intricate tapestries of code that blur the lines between client and server.</p> </li> </ul> </div> </details> <!--tech stack icons--> <p align="center"> <a href="https://skillicons.dev"> <img src="https://skillicons.dev/icons?i=git,aws,css,tensorflow,pytorch,npm,r,sklearn,ts,postgres,prisma,express,figma,firebase,github,html,js,linux,md,materialui,mongodb,mysql,nextjs,nodejs,postman,py,react,redux,tailwind,vscode,&perline=14" /> </a> </p>
 
 
 <!-- Connect with me -->
