@@ -1,0 +1,38 @@
+name: Generate GitHub Contribution Grid Snake
+
+on:
+  # Regenerate twice a day (UTC). Adjust cron as needed.
+  schedule:
+    - cron: "0 */12 * * *"
+  # Allow manual dispatch from the Actions tab
+  workflow_dispatch:
+  # Optionally rerun on pushes to main
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Generate snake SVG/GIF
+        uses: Platane/snk@v3
+        with:
+          # REQUIRED: GitHub username whose graph you want to render
+          github_user_name: ${{ github.repository_owner }}
+
+          # One output path per line. You can append query-string options.
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            # You can also create a GIF:
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1f=#4b91f1=#3c7dd9
+
+        env:
+          # Needed if you fetch private-graph data or just to avoid rate-limiting
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
