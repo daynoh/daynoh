@@ -1,12 +1,9 @@
 name: Generate GitHub Contribution Grid Snake
 
 on:
-  # run twice per day; adjust or remove if you only want once
   schedule:
     - cron: "0 */12 * * *"
-  # allow manual “Run workflow” from the Actions tab
   workflow_dispatch:
-  # also regenerate whenever you push to main
   push:
     branches:
       - main
@@ -20,17 +17,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # ◼ Create the folder(s) where snk will write its output:
+      - name: Make sure dist/ exists
+        run: mkdir -p dist
+
       - name: Generate snake SVG/GIF via snk
         uses: Platane/snk@v3
         with:
-          # replace “<your-github-username>” by your actual username if you want,
-          # but ${{ github.repository_owner }} usually works if this is your profile repo.
           github_user_name: ${{ github.daynoh }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-            # (optional) a GIF, if you like:
+            # (optional) a GIF:
             dist/github-snake.gif?color_snake=orange&color_dots=#c0ffc0,#80ff80,#40ff40,#00ff00,#00cc00
         env:
-          # This ensures snk can fetch your contribution graph without running into rate limits.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
