@@ -24,7 +24,7 @@ jobs:
       - name: Generate snake SVG/GIF via snk
         uses: Platane/snk@v3
         with:
-          github_user_name: ${{ github.daynoh }}
+          github_user_name: daynoh
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
