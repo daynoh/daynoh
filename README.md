@@ -11,10 +11,21 @@
 
 
 <!--- snake -->
+<!--- snake -->
 <div align="center">
-  <img  src="[https://github.com/1999AZZAR/1999AZZAR/blob/readme/resources/img/grid-snake.svg](https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg)"
-       alt="snake" /></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)"
+            srcset="dist/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)"
+            srcset="dist/github-snake.svg" />
+    <img
+      alt="GitHub Contribution Snake"
+      src="dist/github-snake.svg"
+      width="600"
+    />
+  </picture>
 </div>
+
 
 
 <!--h2 without bottom border-->
