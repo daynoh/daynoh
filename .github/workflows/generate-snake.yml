@@ -1,6 +1,8 @@
-name: Generate GitHub Contribution Grid Snake
+# .github/workflows/generate-snake.yml
+name: Generate & Publish GitHub Contribution Snake
 
 on:
+  # adjust the schedule as you like
   schedule:
     - cron: "0 */12 * * *"
   workflow_dispatch:
@@ -8,27 +10,54 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write  # grant permission to push changes
+
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-
     steps:
-      - name: Checkout repository
+      # 1) Checkout the repository
+      - name: Check out code
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true  # so that later `git push` can use GITHUB_TOKEN
+          fetch-depth: 0            # ensure full history so git can commit properly
 
-      # ◼ Create the folder(s) where snk will write its output:
-      - name: Make sure dist/ exists
+      # 2) Make the output directory
+      - name: Make dist/ folder
         run: mkdir -p dist
 
+      # 3) Run snk to generate SVGs/GIFs into dist/
       - name: Generate snake SVG/GIF via snk
         uses: Platane/snk@v3
         with:
-          github_user_name: daynoh
+          github_user_name: daynoh          # ← replace “daynoh” with your username
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-            # (optional) a GIF:
             dist/github-snake.gif?color_snake=orange&color_dots=#c0ffc0,#80ff80,#40ff40,#00ff00,#00cc00
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 4) Configure Git (optional, but ensures correct author/committer)
+      - name: Set up Git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      # 5) Stage & commit only changed files under dist/
+      - name: Commit generated files
+        run: |
+          # Only add dist/ if there are changes
+          git add dist/*
+          if git diff --cached --quiet; then
+            echo "No changes in dist/, skipping commit."
+            exit 0
+          fi
+          git commit -m "chore: update GitHub Contribution Snake [skip ci]"
+
+      # 6) Push back to the same branch (main)
+      - name: Push changes
+        run: |
+          git push origin HEAD:main
