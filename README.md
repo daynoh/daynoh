@@ -37,6 +37,8 @@
 
 
 <!--Intro start-->
+*   🌐 Explore my work, projects, and experience on my **[new portfolio](https://musingila-portfolio-v2.vercel.app/)**.
+
 *   🔭 I'm currently traversing the realms of **Python, TypeScript, React, Next.js, Node.js, MongoDB, PostgreSQL, MySQL, Machine Learning, Reinforcement Learning, and Deep Learning**, seeking the holy grail of algorithmic efficiency.
 
 *   🌱 I'm on a quest to create the first fully autonomous, somewhat profitable trading Agent, harnessing the power of Language Processing, Reinforcement Learning, and feature engineering – a true odyssey into the heart of cutting-edge techniques.
